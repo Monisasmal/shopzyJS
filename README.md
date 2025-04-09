@@ -2,6 +2,9 @@
 
 A simple, clean, and responsive e-commerce website built with HTML, CSS, and Vanilla JavaScript, featuring login/signup, product listings from FakeStore API, search, filter, like, product details, and light/dark mode — all without any external frameworks or libraries.
 
+Here is the project link:--
+https://monisasmal.github.io/shopzyJS/login.html
+
 ✨ Features
 
 🔐 Login/Signup with Local Storage
