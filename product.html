@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Product Details</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="product-detail" class="product-detail">Loading...</div>
+  <script>
+    const detailBox = document.getElementById("product-detail");
+    const productId = localStorage.getItem("selectedProduct");
+
+    fetch(`https://fakestoreapi.com/products/${productId}`)
+      .then(res => res.json())
+      .then(product => {
+        detailBox.innerHTML = `
+          <h2>${product.title}</h2>
+          <img src="${product.image}" />
+          <p><strong>Price:</strong> $${product.price}</p>
+          <p><strong>Category:</strong> ${product.category}</p>
+          <p>${product.description}</p>
+          <p><strong>Rating:</strong> ${product.rating.rate} ⭐</p>
+        `;
+      });
+  </script>
+</body>
+</html>

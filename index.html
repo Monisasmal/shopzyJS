@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ShopZone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>ShopzyZone 🛍️</h1>
+    <div class="top-bar">
+      <input type="text" id="search" placeholder="Search by title..." />
+      <select id="filter"></select>
+      <button id="toggle-theme">🌗</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="product-list" class="product-grid"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
