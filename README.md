@@ -50,7 +50,7 @@ Product page
 
 🙋‍♀️ Author
 
-Manaswini Sasmal
+**Manaswini Sasmal**
 
 👩‍💻 Frontend Developer | React Enthusiast
 
